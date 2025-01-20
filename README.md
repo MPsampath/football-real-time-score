@@ -12,29 +12,41 @@ Handles multiple WebSocket clients seamlessly.
 
 ## Step 2: Install PHP Dependencies
 Install Laravel dependencies using Composer:
+
     composer install
+
 ## Step 3: Install Node.js Dependencies
 Install frontend dependencies using npm:
+
     npm install
+
 ## Step 4: Configure Environment
 Copy the .env.example file to .env:
-        cp .env.example .env
+
+    cp .env.example .env
+
 Generate the Laravel application key:
+
     php artisan key:generate
+
 Update the .env file with your database and WebSocket configurations:
 
 ## Step 5: Start the Reverb WebSocket Server
 Install Reverb as a global dependency:
+
     npm install reverb -g
+
 Start the WebSocket server:
+
     php artisan reverb:start
 
 ## Step 6: Start Laravel Development Server
 
-php artisan serve
+    php artisan serve
 
 ## Step 7: Run Vite Development Server
- npm run dev
+
+    npm run dev
 
 
 Vite development server, Laravel development server and Reverb WebSocket Server theis three servers run separatly and using above command and Open the application in your browser at laravel port
