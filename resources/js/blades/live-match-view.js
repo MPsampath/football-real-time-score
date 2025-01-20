@@ -7,5 +7,4 @@ Echo.channel('score-update').listen('scoreBord',(event)=>{
     document.getElementById('teamA').textContent = "Team A: "+event.teamA;
     document.getElementById('teamB').textContent = "Team B: "+event.teamB;
     document.getElementById('status').textContent = event.status;
-    console.log(event);
  });
